@@ -13,7 +13,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 40vh;
+    align-items: center;
+    height: 100vh;
     width: 100%;
   }
   
@@ -36,7 +37,7 @@
       font-family: "Inter", sans-serif;
       src: url(https://fonts.googleapis.com/css?family=Inter' rel='stylesheet);
     }
-    font-size: 24px;
+    font-size: 32px;
   }
   
   .content-body{
@@ -44,7 +45,8 @@
       font-family: "Inter", sans-serif;
       src: url(https://fonts.googleapis.com/css?family=Inter' rel='stylesheet);
     }
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 300;
     margin-left: 5vw;
     margin-right: 5vw;
   }
@@ -56,6 +58,15 @@
     justify-content: center; /* Centers children vertically */
   }
   
+  .scroller-box {
+    margin-top: 1vh;
+    font-size: 24px;
+    font-weight: 300;
+    height: 20vh;
+    width: 30vw;
+    padding: 1vw, 1vh;
+    overflow-y: auto;
+  }
   
   
   

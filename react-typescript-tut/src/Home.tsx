@@ -16,14 +16,29 @@ const Home = () => {
             <div className = "right-content"> Image of Me</div>
 
         </div>
+        <div className = "section"> </div>
         <div className = "section">
           <div className = "left-content"> 
-            <div className = "content-header"> Course Work </div>
+            <div className = "content-header"> Significant Course Work </div>
             <div className = "content-body"> List of course work</div>
           </div>
           <div className = "right-content">
             <div className = "content-header"> Computer Science Related Skills </div>
-            <div className = "content-body"> List of skills </div>
+            <div className = "content-body"> 
+              <div className = "scroller-box">
+                <div>Operating Systems</div>
+                <div>Algorithms</div>
+                <div>Data Structures</div>
+                <div>Systems Programming</div>
+                <div>Front-End Development</div>
+                <div>Back-End Development</div>
+                <div>Software Development</div>
+                <div>Web Development</div>
+                <div>Object Oriented Programming</div>
+                <div>Parallel Programming</div>
+                <div>Multithreaded Development</div>
+              </div>
+            </div>
           </div>
         </div>
     </div>
