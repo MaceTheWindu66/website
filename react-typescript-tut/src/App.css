@@ -1,47 +1,22 @@
-
-.container{
+.navbar {
   display: flex;
-  height: 100vh;
-}
-
-.left-content, .right-content {
-  width: 50%; /* Each content takes half of the viewport width */
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.left-content {
-  display: flex;
-  flex-direction: column; /* Stacks children vertically */
-  align-items: center; /* Centers children horizontally */
-  justify-content: center; /* Centers children vertically */
-  text-align: center;
-}
-
-.left-content-header{
-  @font-face {
-    font-family: "Inter", sans-serif;
-    src: url(https://fonts.googleapis.com/css?family=Inter' rel='stylesheet);
-  }
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.left-content-body{
-  @font-face {
-    font-family: "Inter", sans-serif;
-    src: url(https://fonts.googleapis.com/css?family=Inter' rel='stylesheet);
-  }
-  font-size: 16px;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-
-.right-content {
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000; /* Ensures the navbar stays on top */
+  margin: 0 auto;
 }
 
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
 
-
+.navbar a:hover {
+  text-decoration: underline;
+}

@@ -1,22 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './Home';
+import Projects from './Projects';
+import Contact from './Contact';
 import './App.css';
 
 function App() {
   return (
-    <div className = "container">
-          <div className = "left-content">
-            <div className = "left-content-header"> Hello! I'm Maddux </div>
-            <div className = "left-content-body"> 
-              I'm a Computer Science student at Worcester Polytechnic Institute, pursuing a Bachelor's and Master's 
-              degree. I am also currently seeking an internship in the field of Computer Science!
-
-
-            </div>
-             
-          </div>
-          <div className = "right-content"> Image Here </div>
-    </div>
+    <Router>
+      <nav className="navbar">
+        <div className="navbar-links">
+          <Link to="/">Home</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
+      </nav>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
