@@ -8,22 +8,23 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/website  ">
-      <nav className="navbar">
+    <Router>
+    <nav className="navbar">
         <div className="navbar-links">
-          <Link to="/">Home</Link>
+          <Link to="/website">Home</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
         </div>
       </nav>
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/website" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
+
   );
 }
 
