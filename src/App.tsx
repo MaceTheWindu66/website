@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/website  ">
       <nav className="navbar">
         <div className="navbar-links">
           <Link to="/">Home</Link>
