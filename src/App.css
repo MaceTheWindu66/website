@@ -15,8 +15,9 @@
   display: inline-block;
   padding: 10px 20px; /* Padding to make the button larger */
   background-color: white; /* Background color of the button */
-  color: #424242; /* Text color */
+  color: black; /* Text color */
   border-radius: 25px; /* Make the buttons round */
+  border-color: black;
   transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 

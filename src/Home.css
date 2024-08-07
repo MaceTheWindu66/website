@@ -81,6 +81,32 @@
     font-size: 32px;
     font-weight: 300;
   }
+
+  .projects-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
+
+  .projects-content{
+    width: 50%;
+    font-size: 24px;
+  }
+
+  .nav-button2 {
+    display: inline-block;
+    padding: 10px 20px; /* Padding to make the button larger */
+    background-color: white; /* Background color of the button */
+    color: #424242; /* Text color */
+    border-radius: 25px; /* Make the buttons round */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+  }
+
+  .nav-button2:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+  }
   
   
   
