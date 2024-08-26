@@ -1,0 +1,40 @@
+.page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
+.project-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.project-image-content, .project-text-content{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    text-align: center;
+}
+
+.project-image-content{
+    height:100%;
+    width: 48%;
+}
+
+.project-text-content{
+    height: 100%;
+    width: 48%;
+    font-weight: 400;
+    font-size: 24px;
+}

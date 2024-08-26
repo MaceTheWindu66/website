@@ -1,14 +1,32 @@
-import React from 'react';
-import {motion} from 'framer-motion';
+import React, {ReactNode} from 'react';
 import './Home.css';
-import { Hidden } from '@mui/material';
+import {useInView} from 'react-intersection-observer';
+import { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
+interface SectionProps {
+  children: ReactNode;
+}
+
+/*const Section: React.FC<SectionProps> = ({ children }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Ensure the animation happens only once
+    threshold: 0.9, // Trigger when 10% of the section is visible
+  });
+
+  return (
+    <div ref={ref} className={`section ${inView ? 'fade-in' : ''}`}>
+      {children}
+    </div>
+  );
+}; */
+
 
 const Home = () => {
   return (
     <div style={{ paddingTop: '5vh' }}>
       <div className = "container">
-          <div className = "section" style={{marginBottom: '2vh'}}>
+          <div className = "section">
             <div className = "left-content">
                 <div className = "content-header"> Hello! I'm Maddux! </div>
                 <div className = "content-body"> I'm a third year student at Worcester Polytechnic Institute
@@ -18,7 +36,6 @@ const Home = () => {
             </div>
           
             <div className = "right-content"> Image of Me</div>
-
           </div>
           <div className = "section">
             <div className = "left-content">
