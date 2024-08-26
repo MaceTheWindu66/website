@@ -11,7 +11,7 @@ const Home = () => {
           <div className = "section" style={{marginBottom: '2vh'}}>
             <div className = "left-content">
                 <div className = "content-header"> Hello! I'm Maddux! </div>
-                <div className = "content-body"> I'm currently a third year student at Worcester Polytechnic Institute
+                <div className = "content-body"> I'm a third year student at Worcester Polytechnic Institute
                   studying Computer Science. I'm currently pursuing my Bachelor's degree, and have recently applied to the Master's
                   program at WPI! My current interests are in Artificial Intelligence, Cybersecurity, Systems Programming, and Web/Game Development.
                 </div>
