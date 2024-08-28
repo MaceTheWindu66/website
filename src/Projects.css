@@ -14,8 +14,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
-
+    height: 70vh;
 }
 
 .project-image-content, .project-text-content{
@@ -24,7 +23,6 @@
     flex-direction: column; /* Stacks children vertically */
     align-items: center; /* Centers children horizontally */
     justify-content: center; /* Centers children vertically */
-    text-align: center;
 }
 
 .project-image-content{
@@ -33,8 +31,28 @@
 }
 
 .project-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 48%;
     font-weight: 400;
     font-size: 24px;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.project-header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.project-description{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
