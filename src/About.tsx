@@ -1,8 +1,15 @@
 import React from "react";
+import './About.css';
 
 function About() {
     return(
-        <div>About</div>
+        <div style={{paddingTop: '6vh', overflow: 'hidden'}}>
+            <div className = "page-container-box">
+                <div className = "section">
+                    
+                </div>
+            </div>
+        </div>
     );
 }
 

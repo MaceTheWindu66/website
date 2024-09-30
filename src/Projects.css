@@ -14,7 +14,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 70vh;
+    height: 57vh;
 }
 
 .project-image-content, .project-text-content{
@@ -45,6 +45,7 @@
 .project-header{
     display: flex;
     flex-direction: row;
+    justify-content: left;
     margin-bottom: 2vh;
     width: 100%;
     font-size: 32px;
@@ -54,5 +55,6 @@
 .project-description{
     display: flex;
     flex-direction: row;
+    text-align: left;
     width: 100%;
 }

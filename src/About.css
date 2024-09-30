@@ -1,0 +1,28 @@
+.page-container-box{
+    display: flex;
+    padding-top: 10vh;
+    width: 100vw;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    overflow-y: hidden;
+    animation: fade-in 3s;
+}
+
+.section{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    width: 100vw;
+}
+
+.content-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 48%;
+}

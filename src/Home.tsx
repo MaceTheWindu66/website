@@ -8,19 +8,6 @@ interface SectionProps {
   children: ReactNode;
 }
 
-/*const Section: React.FC<SectionProps> = ({ children }) => {
-  const { ref, inView } = useInView({
-    triggerOnce: false, // Ensure the animation happens only once
-    threshold: 0.9, // Trigger when 10% of the section is visible
-  });
-
-  return (
-    <div ref={ref} className={`section ${inView ? 'fade-in' : ''}`}>
-      {children}
-    </div>
-  );
-}; */
-
 
 const Home = () => {
   return (
@@ -33,6 +20,7 @@ const Home = () => {
                   studying Computer Science. I'm currently pursuing my Bachelor's degree, and have recently applied to the Master's
                   program at WPI! My current interests are in Artificial Intelligence, Cybersecurity, Systems Programming, and Web/Game Development.
                 </div>
+                <div style={{marginTop: '1vh', fontWeight: 500}}><Link to="/about" className="nav-button2">Learn More About Me Here!</Link></div>
             </div>
           
             <div className = "right-content"> Image of Me</div>
