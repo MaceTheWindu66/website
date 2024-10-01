@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000; /* Ensures the navbar stays on top */
+  height: 4vh;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px; /* Padding to make the button larger */
+  background-color: white; /* Background color of the button */
+  color: black; /* Text color */
+  border-radius: 25px; /* Make the buttons round */
+  border-color: black;
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 5vw;
+}
+
+.nav-button:hover {
+  transform: scale(1.1); /* Scale up the button on hover */
+}

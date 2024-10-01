@@ -1,0 +1,122 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .section{
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    width: 100vw;
+    animation: fade-in 3s;
+    
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100;
+    }
+  }
+  
+  .left-content, .right-content {
+    width: 48vw; /* Each content takes half of the viewport width */
+    box-sizing: border-box;
+  }
+  
+  .left-content {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    text-align: center;
+  }
+  
+  .content-header{
+    @font-face {
+      font-family: "Inter", sans-serif;
+      src: url(https://fonts.googleapis.com/css?family=Inter' rel='stylesheet);
+    }
+    font-size: 48px;
+  }
+  
+  .content-body{
+    @font-face {
+      font-family: "Inter", sans-serif;
+      src: url(https://fonts.googleapis.com/css?family=Inter' rel='stylesheet);
+    }
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  
+  .right-content {
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+  }
+  
+  .scroller-box {
+    margin-top: 1vh;
+    display: flex;
+    font-size: 32px;
+    font-weight: 300;
+    height: 30vh;
+    width: 30vw;
+    padding: 1vw, 1vh;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .lang-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vh;
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  .projects-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
+
+  .projects-content{
+    width: 50%;
+    font-size: 24px;
+  }
+
+  .nav-button2 {
+    display: inline-block;
+    padding: 10px 20px; /* Padding to make the button larger */
+    background-color: white; /* Background color of the button */
+    color: #424242; /* Text color */
+    border-radius: 25px; /* Make the buttons round */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+  }
+
+  .nav-button2:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+  }
+  
+ 
+  
