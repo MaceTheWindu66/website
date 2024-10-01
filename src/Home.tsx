@@ -18,7 +18,7 @@ const Home = () => {
                 <div className = "content-header"> Hello! I'm Maddux! </div>
                 <div className = "content-body"> I'm a third year student at Worcester Polytechnic Institute
                   studying Computer Science. I'm currently pursuing my Bachelor's degree, and have recently applied to the Master's
-                  program at WPI! My current interests are in Artificial Intelligence, Cybersecurity, Systems Programming, and Web/Game Development.
+                  program at WPI! My current interests are in Artificial Intelligence, Cybersecurity, Systems Programming, and Software Development.
                 </div>
                 <div style={{marginTop: '1vh', fontWeight: 500}}><Link to="/about" className="nav-button2">Learn More About Me Here!</Link></div>
             </div>

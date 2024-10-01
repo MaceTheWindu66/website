@@ -16,7 +16,8 @@ const Contact = () => {
             Contact Me!
           </div>
           <div className = "contact-info-text">
-            Below is all of my contact info and a downloadable file of my resume. Thanks for visiting my website!
+            Below is all of my contact info and a downloadable file of my resume. Thanks for visiting my website! Feel free
+            to send me a message!
           </div>
           <div className = "contact-info-text">
             Email: madduxberry31@gmail.com   |   mlberry@wpi.edu
