@@ -1,3 +1,7 @@
+html {
+    font-size: calc(1vw + 1px); /* The base font size will scale with the viewport width */
+  }
+
 .page-container-box{
     display: flex;
     padding-top: 15vh;
@@ -35,7 +39,7 @@
     justify-content: center;
     margin-bottom: 2vh;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .contact-info-text{
@@ -49,7 +53,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.4rem;
     margin-bottom: 2vh;
 }
 

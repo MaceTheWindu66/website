@@ -1,3 +1,7 @@
+html {
+    font-size: calc(1vw + 1px); /* The base font size will scale with the viewport width */
+  }
+
 .page-container{
     display: flex;
     flex-direction: column;
@@ -6,7 +10,8 @@
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-  }
+    animation: fade-in 3s;
+}
 
 
 .project-section{
@@ -37,7 +42,7 @@
     height: 100%;
     width: 48%;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding-right: 2vw;
     padding-left: 2vw;
 }
@@ -50,7 +55,7 @@
     text-underline-offset: 2vh;
     margin-bottom: 2vh;
     width: 100%;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 500;
 }
 

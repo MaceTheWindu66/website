@@ -1,3 +1,7 @@
+html {
+    font-size: calc(1vw + 1px); /* The base font size will scale with the viewport width */
+  }
+
 .page-box{
     display: flex;
     width: 100vw;
@@ -30,7 +34,7 @@
 .text-header{
     text-decoration: underline;
     text-underline-offset: 1vh;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -40,6 +44,6 @@
         src: url(https://fonts.googleapis.com/css?family=Inter' rel='stylesheet);
       }
     margin-top: 2vh;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 300;
 }

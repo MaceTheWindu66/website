@@ -77,7 +77,7 @@ const Home = () => {
               <div className = "content-header"> Significant Course Work </div>
               <div className = "content-body"> 
                 <div style={{flexDirection: 'column', display: 'flex', justifyContent: 'flex-start',
-                  alignItems: 'flex-start', fontSize: 32, fontWeight: 300
+                  alignItems: 'flex-start', fontSize: '2rem', fontWeight: 300
                 }}>
                     <div>Software Engineering</div>
                     <div>Introduction to Artificial Intelligence</div>
