@@ -10,7 +10,7 @@ const Projects = () => {
             Image here
           </div>
           <div className = "project-text-content">
-            <div className = "project-header"> Mass General Website </div>
+            <div className = "project-header"> Hospital Kiosk Web Application </div>
             <div className = "project-description">
               For this project, I served as Project Manager and 
               Full-Stack Software Developer on a team of 11. We were tasked with making a fully functional

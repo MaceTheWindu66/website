@@ -1,0 +1,17 @@
+.slider-container {
+    width: 35vw;  /* Adjust width of the entire slider */
+    height: 50vh; /* Adjust height of the entire slider */
+    margin: 0 auto; /* Optional: centers the slider on the page */
+  }
+
+.carousel-container {
+    width: 45vh;   /* Set container width */
+    height: 45vh;  /* Set container height */
+    overflow: hidden; /* Hide overflow if image exceeds container size */
+  }
+  
+  .carousel-image {
+    width: 100%;   /* Image takes full width of the container */
+    height: 100%;  /* Image takes full height of the container */
+    object-fit: cover; /* Ensure image fits without distorting */
+  }

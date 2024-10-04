@@ -1,6 +1,5 @@
 import React, {ReactNode} from 'react';
 import './Home.css';
-import {useInView} from 'react-intersection-observer';
 import { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
