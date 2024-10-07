@@ -1,0 +1,16 @@
+
+.download-button {
+    width: .1vw; /* Set the size of the button */
+    height: 3vw;
+    cursor: pointer; /* Makes the image appear clickable */
+    border: none;
+    padding: 0;
+    transition: transform 0.2s ease; /* Smooth transition effect */
+  }
+.download-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  .download-button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+  }

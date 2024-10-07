@@ -3,6 +3,7 @@ import './Contact.css';
 import ImageButton from './ImageButton';
 import gitHubLogo from './images/gitHubLogo.png'
 import linkedInLogo from './images/linkedInLogo.png'
+import DownloadableButton from './DownloadableButton';
 
 const Contact = () => {
   return (
@@ -15,15 +16,12 @@ const Contact = () => {
           <div className = "contact-info-header">
             Contact Me!
           </div>
-          <div className = "contact-info-text">
-            Below is all of my contact info and a downloadable file of my resume. Thanks for visiting my website! Feel free
-            to send me a message!
+          <div className = "contact-info-text" style={{width: '90%'}}>
+            Below is all of my contact info, links to my GitHub and LinkedIn, and a downloadable file of my resume.
+            Thanks for visiting my website! Feel free to send me a message!
           </div>
           <div className = "contact-info-text">
             Email: madduxberry31@gmail.com   |   mlberry@wpi.edu
-          </div>
-          <div className = "contact-info-text">
-            The icons below link to my LinkedIn and GitHub accounts! 
           </div>
           <div className = "image-buttons-box">
             <ImageButton
@@ -31,6 +29,7 @@ const Contact = () => {
               url = "https://github.com/MaceTheWindu66"
               altText = "GitHub Profile"
               />
+            <DownloadableButton />
             <ImageButton
               imageSrc = {linkedInLogo}
               url = "https://www.linkedin.com/in/maddux-berry-9b94342a1"

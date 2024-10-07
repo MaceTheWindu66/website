@@ -51,8 +51,15 @@ const Projects = () => {
           </div>
         </div>
         <div className = "project-section">
-          <div className = "project-image-content" >
-            Image Here
+          <div className = "project-image-content" style={{paddingRight: '2vw'}}>
+          <iframe
+             width= '70%'
+             height= '75%'
+             src="https://www.youtube.com/embed/TLQI63xV8RQ"
+             frameBorder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowFullScreen
+            ></iframe>
           </div>
           <div className = "project-text-content">
             <div className = "project-header">
