@@ -1,5 +1,19 @@
 import React from 'react';
 import './Projects.css';
+import WebsiteShowcase1 from './images/WebsiteShowcase1.png'
+import WebsiteShowcase2 from './images/WebsiteShowcase2.png'
+import WebsiteShowcase3 from './images/WebsiteShowcase3.png'
+import WebsiteShowcase4 from './images/WebsiteShowcase4.png'
+import ImageCarousel from './ImageCarousel';
+
+
+const website_images: string[] = [
+  WebsiteShowcase4,
+  WebsiteShowcase1,
+  WebsiteShowcase2,
+  WebsiteShowcase3,
+]
+
 
 const Projects = () => {
   return (
@@ -7,7 +21,7 @@ const Projects = () => {
       <div className = "page-container">
         <div className = "project-section">
           <div className = "project-image-content">
-            Image here
+            <ImageCarousel images={website_images}/>
           </div>
           <div className = "project-text-content">
             <div className = "project-header"> Hospital Kiosk Web Application </div>
@@ -33,7 +47,7 @@ const Projects = () => {
             </div>
           </div>
           <div className = "project-image-content">
-              Image here
+            
           </div>
         </div>
         <div className = "project-section">

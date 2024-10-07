@@ -18,7 +18,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 77.5vh;
   padding: 20px;
   width: 100vw;
   animation: fade-in 3s;
@@ -89,9 +89,10 @@ html {
 .lang-box{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1vh;
-  font-size: 2rem; /* 32px -> 2rem */
+  gap: 2vh;
+  font-size: 2rem; 
   font-weight: 300;
+
 }
 
 .projects-box{
@@ -99,12 +100,27 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2vh;
+  width: 100%;
+
+}
+
+.divider {
+  width: 100%;
+  background-color: black; 
+  height: 3px; 
+  margin-top: 2vh;
+}
+
+.project-title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .projects-content{
   width: 50%;
-  font-size: 1.3rem; /* 24px -> 1.5rem */
+  height: 90%;
+  font-size: 1.3rem; 
 }
 
 .nav-button2 {

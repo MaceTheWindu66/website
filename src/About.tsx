@@ -2,13 +2,28 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ImageCarousel from "./ImageCarousel";
+import MusicPicture1 from "./images/MusicPicture1.jpeg";
+import MusicPicture2 from "./images/MusicPicture2.jpeg";
+import MusicPicture3 from "./images/MusicPicture3.jpeg";
+import MusicPicture4 from "./images/MusicPicture4.jpeg";
+import MusicPicture5 from "./images/MusicPicture5.jpeg";
+import MusicPicture6 from "./images/MusicPicture6.jpeg";
+import BoxingClassPicture from './images/BoxingClassPicture.jpg'
 import './About.css';
+
+const music_images: string[] = [
+    MusicPicture1,
+    MusicPicture3,
+    MusicPicture4,
+    MusicPicture5,
+    MusicPicture6
+]
 
 function About() {
     return(
         <div>
             <div className = "page-box">
-                <div className = "section-box" style={{height: '80vh'}}>
+                <div className = "section-box" style={{height: '80vh', marginBottom: '10vh'}}>
                     <div className = "content-box">
                         <div className = "text-header">
                             More About Me!
@@ -29,9 +44,10 @@ function About() {
                         Image here
                     </div>
                 </div>
+                <div className = "divider"></div>
                 <div className = "section-box">
                     <div className = "content-box">
-                        <ImageCarousel />
+                        <ImageCarousel images={music_images}/>
                     </div>
                     <div className = "content-box" style={{paddingBottom: '20vh'}}>
                         <div className = "text-header"> Music </div>
@@ -43,18 +59,19 @@ function About() {
                         </div>
                     </div>
                 </div>
+                <div className = "divider"></div>
                 <div className = "section-box">
                     <div className = "content-box">
                             <div className = "text-header"> Boxing </div>
                             <div className = "text-box">
-                                Boxing has been a passion of mine for years, and I've advanced to the point of coaching. I have
-                                recently undergone recieving my coaching license, and help coach a boxing class at my college, WPI,
+                                Boxing has been a passion of mine for years, and I've recently advanced to the point of coaching. I have
+                                undergone recieving my coaching license, and help coach a boxing class at my college, WPI,
                                 with my good friend Kane. It is an excellent way to work out, build confidence, be social, and learn
-                                how to defend yourself, and I believe everyone should at least try it through their lives. 
+                                how to defend yourself, and I have a blast both participating in the sport and helping teach others as well.
                             </div>
                     </div>
-                    <div className = "content-box">
-                        Hello
+                    <div className = "content-box" style={{alignContent: 'center', alignItems: 'center'}}>
+                        
                     </div>
                 </div>
             </div>

@@ -1,14 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
-import MusicPicture1 from "./images/MusicPicture1.jpeg";
-import MusicPicture2 from "./images/MusicPicture2.jpeg";
-import MusicPicture3 from "./images/MusicPicture3.jpeg";
-import MusicPicture4 from "./images/MusicPicture4.jpeg";
-import MusicPicture5 from "./images/MusicPicture5.jpeg";
-import MusicPicture6 from "./images/MusicPicture6.jpeg";
 import "./carousel_image.css";
 
-const ImageCarousel = () => {
+type ImageCarouselProps = {
+    images: string[];  // Ensure images is an array of strings
+};
+
+
+const ImageCarousel: React.FC<ImageCarouselProps> = ({images}) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -19,27 +18,18 @@ const ImageCarousel = () => {
         autoplaySpeed: 4000,
     };
 
-    const images = [
-        MusicPicture1,
-        MusicPicture2,
-        MusicPicture3,
-        MusicPicture4,
-        MusicPicture5,
-        MusicPicture6,
-    ];
+
     
     return (
         <div className="slider-container"> 
             <Slider {...settings}>
-            {images.map((image, index) => (
-                <div key={index} className="carousel-container"> 
+            {images.map((image: string, index: number) => (
+               <div key={index} className="carousel-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
                 <img
                     src={image}
                     alt={`Slide ${index + 1}`}
                     className="carousel-image" 
-                    style={
-                        index === 1 ? { top: '20%'} : {} // Apply different position for second image
-                      }
+                    style={{ maxWidth: '100%', maxHeight: '100%' }}
                     />
                 </div>
             ))}

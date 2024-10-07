@@ -6,10 +6,12 @@ import Projects from './Projects';
 import Contact from './Contact';
 import About from "./About";
 import './App.css';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
     <nav className="navbar">
         <div className="navbar-links">
         <Link to="/website" className="nav-button">Home</Link>

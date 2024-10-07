@@ -2,28 +2,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333;
+  background-color: black;
   padding: 10px;
-  color: white;
+  color: black;
   position: fixed;
   width: 100vw;
   z-index: 1000; /* Ensures the navbar stays on top */
-  height: 4vh;
+  height: 5vh;
 }
 
 .nav-button {
   display: inline-block;
   padding: 10px 20px; /* Padding to make the button larger */
-  background-color: white; /* Background color of the button */
-  color: black; /* Text color */
+  background-color: black; /* Background color of the button */
+  color: white; /* Text color */
   border-radius: 25px; /* Make the buttons round */
-  border-color: black;
+  border-color: white;
   transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
 .navbar a {
-  color: black;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: .5vh;
   font-weight: 600;
   margin: 5vw;
 }

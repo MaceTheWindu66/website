@@ -1,7 +1,9 @@
 import React, {ReactNode} from 'react';
 import './Home.css';
 import { useState, useEffect, useRef } from 'react';
+import ImageCarousel from './ImageCarousel';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import WebsiteHighlight from './images/WebsiteHighlight.png'
 
 interface SectionProps {
   children: ReactNode;
@@ -10,9 +12,9 @@ interface SectionProps {
 
 const Home = () => {
   return (
-    <div style={{ paddingTop: '5vh' }}>
-      <div className = "container">
-          <div className = "section">
+    <div>
+      <div className = "container" style={{paddingTop: '12vh'}}>
+          <div className = "section" style={{height: '81vh'}}>
             <div className = "left-content">
                 <div className = "content-header"> Hello! I'm Maddux! </div>
                 <div className = "content-body"> I'm a third year student at Worcester Polytechnic Institute
@@ -24,9 +26,10 @@ const Home = () => {
           
             <div className = "right-content"> Image of Me</div>
           </div>
+          <div className = "divider" style={{marginBottom: '4vh'}}></div>
           <div className = "section">
             <div className = "left-content">
-              <div className = "content-header"> Languages </div>
+              <div className = "content-header" style={{marginBottom: '3vh', textDecoration: 'underline', textUnderlineOffset: '2vh'}}> Languages </div>
                 <div className = "lang-box"> 
                     <div> x86 Assembly </div>
                     <div> Java </div>
@@ -43,35 +46,47 @@ const Home = () => {
             <div className = "content-header" style ={{marginBottom:'2vh'}}> Highlighted Projects </div>
             <div className = "content-body">
             <div className = "projects-box">
-                  <div className = "projects-content" style={{paddingRight: '30px'}}>
+                  <div className = "projects-content" style={{paddingRight: '30px', paddingTop: '1vh'}}>
                     <iframe
                       width= '80%'
-                      height= '50%'
+                      height= '45%'
                       src="https://www.youtube.com/embed/TLQI63xV8RQ"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
             >        </iframe>
             </div>
-                  <div className = "projects-content"> For this project, I used Python and Pytorch
+                  <div className = "projects-content">
+                  <div style={{fontSize: '1.4rem', fontWeight: '500', textDecoration: 'underline', textUnderlineOffset: '1vh', marginBottom: '.5vh'}}>Deep Learning Snake AI</div>
+                       For this project, I used Python and Pytorch
                       to create a Deep Learning Neural Network Model that
                       teaches itself how to play the classic game Snake.
                   </div>
                 </div>
+                <div className = "divider"></div>
                 <div className = "projects-box">
                   <div className = "projects-content">
+                    <div style={{fontSize: '1.4rem', fontWeight: '500', textDecoration: 'underline', textUnderlineOffset: '1vh', marginBottom: '.5vh'}}>Hospital  Web Application</div>
                     For my software engineering class I worked on a team of 11
                     people as Project Manager and Full Stack Developer, and we were tasked
                     with building this website for Brigham and Women's Hospital.
                   </div>
+                  <div className = "projects-content">
+                    <img 
+                      src={WebsiteHighlight}
+                      alt="Kiosk Website Highlights"
+                      style={{height: '100%', width: '100%', objectFit: 'contain'}}
+                    />
+                  </div>
                 </div>
-                <div style={{marginTop: '1vh', fontWeight: 500}}> See the rest of my Projects! <Link to="/projects" className="nav-button2">Projects</Link></div>
+                <div style={{ fontWeight: 500}}> See the rest of my Projects! <Link to="/projects" className="nav-button2">Projects</Link></div>
 
             </div>
             </div>
             
           </div>
-          <div className = "section" >
+          <div className = "divider" style={{marginTop: '4vh'}}></div>
+          <div className = "section" style={{marginBottom: '7vh'}} >
             <div className = "left-content"> 
               <div className = "content-header"> Significant Course Work </div>
               <div className = "content-body"> 
