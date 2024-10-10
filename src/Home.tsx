@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import ImageCarousel from './ImageCarousel';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import WebsiteHighlight from './images/WebsiteHighlight.png'
+import ImageButton from './ImageButton';
+import GitHubLogo from './images/gitHubLogo.png'
 
 interface SectionProps {
   children: ReactNode;
@@ -79,7 +81,17 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <div style={{ fontWeight: 500}}> See the rest of my Projects! <Link to="/projects" className="nav-button2">Projects</Link></div>
+                <div className = "small-button-box">
+                <div><Link to="/projects" className="nav-button2" style={{paddingTop: '3vh'}}>See the rest of my projects here! </Link></div>
+                <div> 
+                      Or check out my GitHub!
+                      <ImageButton
+                        imageSrc = {GitHubLogo}
+                        url = "https://github.com/MaceTheWindu66"
+                        altText = "GitHub Profile"
+                      />
+                </div>
+                </div>
 
             </div>
             </div>
