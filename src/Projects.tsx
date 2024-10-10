@@ -4,6 +4,8 @@ import WebsiteShowcase1 from './images/WebsiteShowcase1.png'
 import WebsiteShowcase2 from './images/WebsiteShowcase2.png'
 import WebsiteShowcase3 from './images/WebsiteShowcase3.png'
 import WebsiteShowcase4 from './images/WebsiteShowcase4.png'
+import NQueens from './images/N-Queens.png'
+
 import ImageCarousel from './ImageCarousel';
 
 
@@ -37,17 +39,16 @@ const Projects = () => {
         <div className = "project-section">
           <div className = "project-text-content"> 
             <div className = "project-header">
-              Nim Bot
+              Memory Management Unit Simulator
             </div>
             <div className = "project-description"> 
-              For this project, I created a simple bot using an algorithm that will attempt to beat
-              the opposing player at the famous game of Nim. The bot essentially calculates the nim-sum 
-              after every move, and uses this nim sum to determine its next move, ensuring it plays the winning
-              strategy every time.
+              For this project, I, along with my student partner, created a Memory Management Unit Simulator in C.
+              This program takes instructions such as map, store, load, and so on, and uses them to interact with simulated representations of physical and 
+              virtual memory. These instructions and operations simulate how an actual MMU operates in your CPU.
             </div>
           </div>
           <div className = "project-image-content">
-            
+    
           </div>
         </div>
         <div className = "project-section">
@@ -79,13 +80,18 @@ const Projects = () => {
               N Queens Problem Solver
             </div>
             <div className = "project-description">
-              For this project, I used a backtracking algorithm to solve the infamous N-Queens problem for any input of N.
-              This project allowed me to get more familiar with backtracking algorithms and enhanced my problem solving skills 
+              For this project, I used a backtracking algorithm to solve the infamous N-Queens problem for any input of N. 
+              The N-Queens problem is essentially the question of how can you put N amount of queens on an NxN board in such a way
+              where no queen can attack any other queen. The project allowed me to get more familiar with backtracking algorithms and enhanced my problem solving skills 
               greatly.
             </div>
           </div>
           <div className = "project-image-content">
-            Image here
+            <img 
+              src={NQueens}
+              alt="N-Queens"
+              style={{height: '75%', width: '75%', objectFit: "contain"}}
+            />
           </div>
         </div>
       </div>

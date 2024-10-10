@@ -1,15 +1,12 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 import './Home.css';
-import { useState, useEffect, useRef } from 'react';
-import ImageCarousel from './ImageCarousel';
+//import { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import WebsiteHighlight from './images/WebsiteHighlight.png'
 import ImageButton from './ImageButton';
 import GitHubLogo from './images/gitHubLogo.png'
 
-interface SectionProps {
-  children: ReactNode;
-}
+
 
 
 const Home = () => {
@@ -77,7 +74,7 @@ const Home = () => {
                     <img 
                       src={WebsiteHighlight}
                       alt="Kiosk Website Highlights"
-                      style={{height: '100%', width: '100%', objectFit: 'contain'}}
+                      style={{height: '100%', width: '100%', objectFit: 'contain', paddingTop: '4vh'}}
                     />
                   </div>
                 </div>
