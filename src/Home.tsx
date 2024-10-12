@@ -48,7 +48,7 @@ const Home = () => {
                   <div className = "projects-content" style={{paddingRight: '30px', paddingTop: '1vh'}}>
                     <iframe
                       width= '80%'
-                      height= '45%'
+                      height= '80%'
                       src="https://www.youtube.com/embed/TLQI63xV8RQ"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -74,12 +74,12 @@ const Home = () => {
                     <img 
                       src={WebsiteHighlight}
                       alt="Kiosk Website Highlights"
-                      style={{height: '100%', width: '100%', objectFit: 'contain', paddingTop: '4vh'}}
+                      style={{height: '130%', width: '110%', objectFit: 'contain', paddingTop: '.5vh'}}
                     />
                   </div>
                 </div>
                 <div className = "small-button-box">
-                <div><Link to="/projects" className="nav-button2" style={{paddingTop: '3vh'}}>See the rest of my projects here! </Link></div>
+                <div><Link to="/projects" className="nav-button2" style={{paddingTop: '3.4vh'}}>See the rest of my projects here! </Link></div>
                 <div> 
                       Or check out my GitHub!
                       <ImageButton
