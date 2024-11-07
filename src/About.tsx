@@ -15,6 +15,7 @@ import TravelPicture3 from "./images/TravelPicture3.png";
 import TravelPicture4 from "./images/TravelPicture4.png";
 import TravelPicture5 from "./images/TravelPicture5.png";
 import './About.css';
+import drumPicture from './images/drumPicture.png';
 
 const music_images: string[] = [
     MusicPicture1,
@@ -55,7 +56,11 @@ function About() {
                         </div>
                     </div>
                     <div className = "content-box" style={{alignContent: 'center', alignItems: 'center'}}>
-                        Image here
+                        <img 
+                            src = {drumPicture}
+                            alt = "Drumming"
+                            style={{ maxWidth: '80%', maxHeight: '80%' }}
+                        />
                     </div>
                 </div>
                 <div className = "divider"></div>

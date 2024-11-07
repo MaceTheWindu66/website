@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import WebsiteHighlight from './images/WebsiteHighlight.png'
 import ImageButton from './ImageButton';
 import GitHubLogo from './images/gitHubLogo.png'
-
+import profImg from './images/prof-img.jpg'
 
 
 
@@ -23,7 +23,12 @@ const Home = () => {
                 <div style={{marginTop: '1vh', fontWeight: 500}}><Link to="/about" className="nav-button2">Learn More About Me Here!</Link></div>
             </div>
           
-            <div className = "right-content"> Image of Me</div>
+            <div className = "right-content"> 
+              <img
+                src = {profImg}
+                alt = "me"
+                />
+            </div>
           </div>
           <div className = "divider" style={{marginBottom: '4vh'}}></div>
           <div className = "section">
