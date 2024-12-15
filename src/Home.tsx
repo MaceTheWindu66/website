@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import WebsiteHighlight from './images/WebsiteHighlight.png'
 import ImageButton from './ImageButton';
 import GitHubLogo from './images/gitHubLogo.png'
-import profImg from './images/prof-img.jpg'
+import prof_pic_transparent from './images/prof_pic_transparent.png'
 
 
 
@@ -24,9 +24,10 @@ const Home = () => {
             </div>
           
             <div className = "right-content"> 
-              <img
-                src = {profImg}
+              <img 
+                src = {prof_pic_transparent}
                 alt = "me"
+                style = {{objectFit: 'contain', height: '100%', width: '100%'}}
                 />
             </div>
           </div>

@@ -5,7 +5,8 @@ import WebsiteShowcase2 from './images/WebsiteShowcase2.png'
 import WebsiteShowcase3 from './images/WebsiteShowcase3.png'
 import WebsiteShowcase4 from './images/WebsiteShowcase4.png'
 import NQueens from './images/N-Queens.png'
-
+import clientandserver from './images/clientandserver.png'
+import VADERmatrix from './images/VADERmatrix.png'
 import ImageCarousel from './ImageCarousel';
 
 
@@ -33,6 +34,39 @@ const Projects = () => {
               service request website to be used on kiosks for Brigham and Women's Hospital, including pathfinding components with
               different choices of algorithms, and a service request component that uploaded requests to a database,
               among other useful features.
+            </div>
+          </div>
+        </div>
+        <div className = "project-section">
+          <div className = "project-text-content">
+            <div className = "project-header"> Sentiment Analysis AI Models </div>
+            <div className = "project-description">
+              At WPI, I worked on this project with four of my peers to implement five different Artificial Intelligence / Machine Learning models 
+              for the purpose of analyzing sentiments of social media posts, specifically on tweets that are on X (formerly twitter). These models classified each post
+              into positive, negative, or neutral sentiments, with accuracy scores being displayed via confusion matrices. I was tasked with implementing the VADER model,
+              the confusion matrix for which is shown on the right.
+            </div>
+          </div>
+          <div className = "project-image-content">
+            <img
+              src={VADERmatrix}
+              alt="Confusion matrix for VADER Model"
+            />
+          </div>
+        </div>
+        <div className = "project-section">
+          <div className = "project-image-content">
+            <img 
+              src = {clientandserver}
+              alt= "client and server"
+            />
+          </div>
+          <div className = "project-text-content">
+            <div className = "project-header"> HTTP Server and Client </div>
+            <div className = "project-description">
+              For this project, I created a simple HTTP server, as well as a client using a linux environment. By running these two programs, you can send HTTP GET requests to the server
+              from the client, and the server will then answer the request for the domain you input. The output includes information for the website requested, as well
+              as the index.html for the website. 
             </div>
           </div>
         </div>

@@ -4,13 +4,18 @@ import ImageButton from './ImageButton';
 import gitHubLogo from './images/gitHubLogo.png'
 import linkedInLogo from './images/linkedInLogo.png'
 import DownloadableButton from './DownloadableButton';
+import prof_pic_transparent from './images/prof_pic_transparent.png'
 
 const Contact = () => {
   return (
     <div style = {{paddingTop: '15vh', overflow: 'hidden'}}>
       <div className = "page-container-box">
         <div className = "my-image">
-          Image here
+          <img
+            src = {prof_pic_transparent}
+            alt = "professional"
+            style = {{objectFit: 'contain', height: '80%', width: '50%', position: 'fixed', marginTop: '30vh'}}
+          />
         </div>
         <div className = "contact-info">
           <div className = "contact-info-header">
