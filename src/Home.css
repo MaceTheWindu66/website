@@ -78,8 +78,8 @@ html {
   display: flex;
   font-size: 2rem; /* 32px -> 2rem */
   font-weight: 300;
-  height: 30vh;
-  width: 30vw;
+  height: 42vh;
+  width: 35vw;
   padding: 1vw, 1vh;
   overflow-y: auto;
   flex-direction: column;

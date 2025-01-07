@@ -17,8 +17,10 @@ const Home = () => {
             <div className = "left-content">
                 <div className = "content-header"> Hello! I'm Maddux! </div>
                 <div className = "content-body"> I'm a third year student at Worcester Polytechnic Institute
-                  studying Computer Science. I'm currently pursuing my Bachelor's degree, and have recently applied to the Master's
-                  program at WPI! My current interests are in Artificial Intelligence, Cybersecurity, Systems Programming, and Software Development.
+                  studying Computer Science. I'm currently a member of the BS/MS program at WPI,
+                  where I am current pursuing both a Bachelor of Science and Master of Science 
+                  degree in Computer Science simultaneously. My current interests are in Artificial Intelligence,
+                  Cybersecurity, Systems Programming, and Software Development.
                 </div>
                 <div style={{marginTop: '1vh', fontWeight: 500}}><Link to="/about" className="nav-button2">Learn More About Me Here!</Link></div>
             </div>
@@ -48,7 +50,7 @@ const Home = () => {
                 </div>
             </div>
             <div className = "right-content"> 
-            <div className = "content-header" style ={{marginBottom:'2vh'}}> Highlighted Projects </div>
+            <div className = "content-header" style ={{paddingTop:'2vh'}}> Highlighted Projects </div>
             <div className = "content-body">
             <div className = "projects-box">
                   <div className = "projects-content" style={{paddingRight: '30px', paddingTop: '1vh'}}>
@@ -109,12 +111,13 @@ const Home = () => {
                   alignItems: 'flex-start', fontSize: '2rem', fontWeight: 300
                 }}>
                     <div>Software Engineering</div>
-                    <div>Introduction to Artificial Intelligence</div>
-                    <div>Systems Programming Concepts</div>
+                    <div>Artificial Intelligence</div>
+                    <div>Network Security</div>
                     <div>Algorithms</div>
-                    <div>Object Oriented Design Concepts</div>
-                    <div> Operating Systems</div>
+                    <div>Object Oriented Design</div>
+                    <div>Operating Systems</div>
                     <div>Assembly Language</div>  
+                    <div>Computer Networks</div>
                   </div>
               </div>
             </div>
@@ -123,14 +126,18 @@ const Home = () => {
               <div className = "content-header"> CS Related Skills </div>
                     <div className = "content-body"> 
                       <div className = "scroller-box">
-                        <div>Operating Systems</div>
+                        <div>Agile Methodologies</div>
                         <div>Algorithms</div>
+                        <div>Artificial Intelligence</div>
+                        <div>Machine Learning</div>
                         <div>Data Structures</div>
-                        <div>Systems Programming</div>
+                        <div>Security Vulnerabilities</div>
+                        <div>Return Oriented Programming</div>
                         <div>Front-End Development</div>
                         <div>Back-End Development</div>
                         <div>Software Development</div>
                         <div>Web Development</div>
+                        <div>Operating Systems</div>
                         <div>Object Oriented Programming</div>
                         <div>Parallel Programming</div>
                         <div>Multithreaded Development</div>

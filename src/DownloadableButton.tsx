@@ -4,8 +4,8 @@ import './DownloadableButton.css'
 
 const DownloadableButton = () => {
     const handleDownload = () => {
-      const fileUrl = `${process.env.PUBLIC_URL}/Resume.pdf`;
-      const fileName = 'Resume.pdf';
+      const fileUrl = `${process.env.PUBLIC_URL}/Maddux-Berry-Resume.pdf`;
+      const fileName = 'Maddux-Berry-Resume.pdf';
   
       const link = document.createElement('a');
       link.href = fileUrl;

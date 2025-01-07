@@ -4,6 +4,7 @@ import WebsiteShowcase1 from './images/WebsiteShowcase1.png'
 import WebsiteShowcase2 from './images/WebsiteShowcase2.png'
 import WebsiteShowcase3 from './images/WebsiteShowcase3.png'
 import WebsiteShowcase4 from './images/WebsiteShowcase4.png'
+import MMU from './images/MMU.png'
 import NQueens from './images/N-Queens.png'
 import clientandserver from './images/clientandserver.png'
 import VADERmatrix from './images/VADERmatrix.png'
@@ -51,6 +52,7 @@ const Projects = () => {
             <img
               src={VADERmatrix}
               alt="Confusion matrix for VADER Model"
+              style={{height: '95%', width: '85%', objectFit: "contain"}}
             />
           </div>
         </div>
@@ -59,6 +61,7 @@ const Projects = () => {
             <img 
               src = {clientandserver}
               alt= "client and server"
+              style={{height: '75%', width: '75%', objectFit: "contain"}}
             />
           </div>
           <div className = "project-text-content">
@@ -82,7 +85,11 @@ const Projects = () => {
             </div>
           </div>
           <div className = "project-image-content">
-    
+          <img 
+              src={MMU}
+              alt="MMU"
+              style={{height: '75%', width: '75%', objectFit: "contain"}}
+            />
           </div>
         </div>
         <div className = "project-section">
