@@ -1,13 +1,17 @@
 import './App.css'
 import HeroSection from './sections/HeroSection'
+import ProjectsSection from './sections/ProjectsSection'
 
 function App() {
 
   return (
     <>
-      <div>
+      <section id="hero">
         <HeroSection />
-      </div>
+      </section>
+      <section id="projects">
+        <ProjectsSection />
+      </section>
     </>
   )
 }
