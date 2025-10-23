@@ -1,28 +1,52 @@
+import ProjectCard from "../components/ProjectCard";
+import type { Project } from "../components/ProjectCard";
+
 export default function ProjectsSection() {
     
+    const projects: Project[] = [
+    {
+      title: "3D Printed Humanoid Robot",
+      description: "Bipedal Humanoid Robot that uses Deep Reinforcement Learning for walking and standing.",
+      image:
+        "",
+      tags: ["Python", "Embedded Systems", "Machine Learning", "Software Engineering"],
+      link: "https://github.com/KoalbyMQP"
+    },
+    {
+        title: "RoLint",
+        description: "Embedded Systems Linter released as an open source package on PyPi.",
+        image: "",
+        tags: ["Python", "C/C++", "CI/CD", "Embedded Systems", "Software Engineering"],
+        link: "https://pypi.org/project/rolint/"
+    },
+    {
+        title: "Brigham and Women's Hospital Application",
+        description: "A Full-Stack web application for Brigham and Women's Hospital",
+        image: "",
+        tags: ["React", "TypeScript", "Java", "PostgreSQL", "Amazon Web Services"],
+        link: "https://github.com/MaceTheWindu66/Hospital-Website"
+    },
+    {
+        title: "Driver Station",
+        description: "A web-based interface for running, testing, and uploading code to an embedded system",
+        image: "",
+        tags: ["React", "TypeScript", "Java", "Firebase", "Firestore"],
+        link: ""
+    },
+  ];
+
+
     return (
-        <section className="h-screen flex items-center flex-row">
-            <div className="flex items-center text-center flex-col">
-                <div>
-                    <h1 className="text-6xl font-bold">
-                        <span className="text-8xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
-                            Hello, I'm Maddux
-                        </span>
-                    </h1>
-                </div>
-                <div className="text-2xl mt-8 w-2xl">
-                    Passionate <span className="font-bold">Full-Stack Software Engineer</span> and <span className="font-bold">AI/Systems Engineer</span>, who loves creating innovative
-                    and effective solutions to challenging problems.
-                </div>
-                <button className=" mt-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg transform hover:scale-105 transition duration-300">
-                    
-                    <a
-                        href="#projects"
-                    > <span className="text-lg text-white font-bold">View My Projects!</span>
-                    </a>
-                </button>
+        <section className="h-screen flex flex-col items-center">
+            <div
+                className="grid w-full max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            >
+                {projects.map((project) => (
+                <ProjectCard key={project.title} {...project} />
+                ))}
             </div>
         </section>
+
     );
 
 };
