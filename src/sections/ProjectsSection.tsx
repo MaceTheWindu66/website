@@ -3,6 +3,8 @@ import type { Project } from "../components/ProjectCard";
 import ProjectCarousel from "../components/ProjectCarousel";
 import RobotImg from "../../public/finely.png";
 import RolintImg from "../../public/Rolint_Logo.jpg";
+import sentAnalysis from "../images/sentanalysis.png"
+import BWImg from "../images/B&WHospital.png"
 
 
 const projects: Project[] = [
@@ -32,7 +34,7 @@ const projects: Project[] = [
     title: "Brigham and Women's Hospital Application",
     description:
       "A full-stack web application built for Brigham and Women's Hospital.",
-    image: "",
+    image: BWImg,
     tags: ["React", "TypeScript", "Java", "PostgreSQL", "AWS"],
     link: "https://github.com/MaceTheWindu66/Hospital-Website",
   },
@@ -48,7 +50,7 @@ const projects: Project[] = [
     title: "Sentiment Analysis with Artificial Intelligence",
     description:
       "Implemented multiple ML models to classify sentiment in social media posts.",
-    image: "",
+    image: sentAnalysis,
     tags: [
       "Python",
       "Scikit-Learn",

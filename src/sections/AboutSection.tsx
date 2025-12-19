@@ -90,9 +90,9 @@ export default function AboutSection() {
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-center mb-14">
           {/* About text */}
           <div className="space-y-4 text-sm md:text-base text-gray-300">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">
-              About Me
-            </h2>
+            <span className="text-5xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+                            About Me
+            </span>
             <p>
               I'm a software engineer who loves building things at the
               intersection of systems, AI, and thoughtful user experience. I
@@ -136,11 +136,11 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Interests heading */}
+
         <div className="text-center mb-6">
-          <h3 className="text-2xl md:text-3xl font-semibold mb-2">
-            Beyond Engineering
-          </h3>
+          <span className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+                            Beyond Engineering
+            </span>
           <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
             A few things that shape how I think, work, and build outside of pure
             code.
