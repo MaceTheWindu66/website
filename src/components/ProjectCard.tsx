@@ -3,8 +3,9 @@ export interface Project {
     title: string;
     description: string;
     image: string;
-    tags: [string];
+    tags: string[];
     link: string;
+    imgStyle?: React.CSSProperties;
 }
 
 
@@ -14,15 +15,17 @@ export default function ProjectCard ({
     image,
     tags,
     link,
+    imgStyle
 }: Project) {
     return(
-        <article className="group relative grid grid-rows-[auto_1fr_auto] rounded-2xl border border-zinc-200/70 bg-white shadow-sm transition hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900" aria-label={title}>
+        <article className="group relative grid rounded-2xl border border-zinc-200/70 bg-white shadow-sm transition hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900" aria-label={title}>
             <div className="aspect-video overflow-hidden rounded-t-2xl bg-zinc-100 dark:bg-zinc-800">
                 <img
                 src={image}
                 alt={`${title} screenshot`}
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                style={imgStyle}
                 />
             </div>
             <div className="p-4 sm:p-5">
@@ -34,7 +37,7 @@ export default function ProjectCard ({
                 </p>            
 
                 {tags?.length > 0 && (
-                    <ul className="mt-3 flex flex-wrap gap-2" aria-label="tags">
+                    <ul className="mt-3 flex flex-wrap gap-2 items-center justify-center" aria-label="tags">
                     {tags.map((t) => (
                     <li
                         key={t}
@@ -45,7 +48,9 @@ export default function ProjectCard ({
                     </li>
                     ))}
                 </ul>
+                
                 )}
+                {link && <a href={link} className="absolute inset-0 z-10" aria-label={title} />}
             </div>
         </article>
 

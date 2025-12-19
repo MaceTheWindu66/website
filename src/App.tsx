@@ -1,4 +1,5 @@
 import './App.css'
+import AboutSection from './sections/AboutSection'
 import HeroSection from './sections/HeroSection'
 import ProjectsSection from './sections/ProjectsSection'
 
@@ -12,6 +13,9 @@ function App() {
       </section>
       <section id="projects">
         <ProjectsSection />
+      </section>
+      <section id='about'>
+        <AboutSection />
       </section>
     </div>
   )
