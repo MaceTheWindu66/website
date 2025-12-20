@@ -1,7 +1,6 @@
 
 import { useState, type ReactElement, type ReactNode } from "react";
-import ProjectCard from "./ProjectCard";
-import type { Project } from "./ProjectCard";
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 

@@ -66,13 +66,10 @@ const aboutPhotos: AboutPhoto[] = [
 export default function AboutSection() {
   return (
     <section
-      id="about"
       className="w-full py-20 px-6 md:px-10 lg:px-20 bg-black text-white"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Text + photos row */}
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-center mb-14">
-          {/* About text */}
           <div className="space-y-4 text-sm md:text-base text-gray-300">
             <span className="text-5xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
                             About Me
@@ -133,7 +130,7 @@ export default function AboutSection() {
 
         {/* Floating interest cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {interests.map((interest, i) => (
+          {interests.map((interest) => (
             <motion.div
                 key={interest.title}
                 className="relative rounded-2xl bg-gradient-to-b from-[#181818] to-[#090909] border border-white/5 p-5 flex flex-col gap-3"
