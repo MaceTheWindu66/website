@@ -15,29 +15,13 @@ type AboutPhoto = {
   label: string;
 };
 
-// ----- Image imports (update these paths to your actual images) -----
-import musicPhoto from "../images/music.jpg";     // e.g. src/assets/...
+
+import musicPhoto from "../images/music.jpg";
 import travelPhoto from "../images/travel.jpg";
 
 
-// ----- Floating animation -----
-const floatKeyframes = {
-  y: [0, -8, 0],
-  boxShadow: [
-    "0 18px 45px rgba(0,0,0,0.45)",
-    "0 25px 60px rgba(0,0,0,0.7)",
-    "0 18px 45px rgba(0,0,0,0.45)",
-  ],
-};
 
-const getFloatTransition = (delay: number) => ({
-  duration: 4,
-  repeat: Infinity as const,
-  ease: "easeInOut" as const,
-  delay,
-});
 
-// ----- Data -----
 const interests: Interest[] = [
   {
     title: "Music",
@@ -151,29 +135,34 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {interests.map((interest, i) => (
             <motion.div
-              key={interest.title}
-              className="relative rounded-2xl bg-gradient-to-b from-[#181818] to-[#090909] border border-white/5 p-5 flex flex-col gap-3 shadow-[0_18px_45px_rgba(0,0,0,0.6)]"
-              animate={floatKeyframes}
-              transition={getFloatTransition(i * 0.3)}
-              whileHover={{
-                y: -12,
-                scale: 1.03,
-                boxShadow: "0 35px 80px rgba(88,101,242,0.55)",
-              }}
-            >
-              <div className="flex items-center gap-3">
-                <div className="inline-flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 p-[1px]">
-                  <div className="rounded-full bg-black px-3 py-2 flex items-center gap-2">
-                    {interest.icon}
-                  </div>
+                key={interest.title}
+                className="relative rounded-2xl bg-gradient-to-b from-[#181818] to-[#090909] border border-white/5 p-5 flex flex-col gap-3"
+                initial={{
+                    y: 0,
+                    scale: 1,
+                    boxShadow: "0 18px 45px rgba(0,0,0,0.6)", // base shadow
+                }}
+                whileHover={{
+                    y: -12,
+                    scale: 1.03,
+                    boxShadow: "0 35px 80px rgba(88,101,242,0.55)", // glow on hover
+                }}
+                transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                >
+                <div className="flex items-center gap-3">
+                    <div className="inline-flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 p-[1px]">
+                    <div className="rounded-full bg-black px-3 py-2 flex items-center gap-2">
+                        {interest.icon}
+                    </div>
+                    </div>
+                    <h4 className="font-semibold text-lg">{interest.title}</h4>
                 </div>
-                <h4 className="font-semibold text-lg">{interest.title}</h4>
-              </div>
 
-              <p className="text-sm text-gray-300 leading-relaxed">
-                {interest.description}
-              </p>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                    {interest.description}
+                </p>
             </motion.div>
+
           ))}
         </div>
       </div>

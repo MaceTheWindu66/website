@@ -5,7 +5,8 @@ import RobotImg from "../../public/finely.png";
 import RolintImg from "../../public/Rolint_Logo.jpg";
 import sentAnalysis from "../images/sentanalysis.png"
 import BWImg from "../images/B&WHospital.png"
-
+import driverStation from "../images/driver-station.png"
+import climateAction from '../images/climate_action.png'
 
 const projects: Project[] = [
   {
@@ -42,8 +43,8 @@ const projects: Project[] = [
     title: "Driver Station",
     description:
       "A web-based interface for running, testing, and uploading code to an embedded system.",
-    image: "",
-    tags: ["React", "TypeScript", "Java", "Firebase", "Firestore"],
+    image: driverStation,
+    tags: ["React", "TypeScript", "Java", "Python", "Firebase", "Firestore", "Bluetooth Protocol"],
     link: "",
   },
   {
@@ -64,7 +65,7 @@ const projects: Project[] = [
     title: "Scaling Climate Action in Major German Cities",
     description:
       "Assisted a German startup with scaling climate initiatives across Berlin and other cities.",
-    image: "",
+    image: climateAction,
     tags: ["Data Analysis"],
     link: "https://digital.wpi.edu/concern/student_works/9p290f78q?locale=en",
   },

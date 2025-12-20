@@ -1,5 +1,5 @@
 import Headshot from "../components/Headshot";
-
+import { motion } from "framer-motion"
 
 export default function HeroSection() {
     
@@ -20,14 +20,31 @@ export default function HeroSection() {
                     Passionate <span className="font-bold">Full-Stack Software Engineer</span> and <span className="font-bold">AI/Systems Engineer</span>, dedicated to creating innovative
                     and effective solutions to challenging problems.
                 </div>
-                <button className=" mt-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg transform hover:scale-105 transition duration-300">
-                    
-                    <a
-                        href="#projects"
-                    > 
-                        <span className="text-lg text-white font-bold">View My Projects!</span>
-                    </a>
-                </button>
+               <motion.a
+                    href="#projects"
+                    whileHover={{ y: -6, scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-tr from-blue-500 to-purple-500 p-[1px] mt-4"
+                    >
+                    <div className="flex items-center gap-2 bg-black rounded-xl px-6 py-3">
+                        <span className="text-lg text-white font-bold">
+                        View My Projects!
+                        </span>
+                    </div>
+                </motion.a>
+
+                <motion.a
+                    href="#contact"
+                    whileHover={{ y: -6, scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-tr from-purple-500 to-blue-500 p-[1px] mt-4"
+                    >
+                    <div className="flex items-center gap-2 bg-black rounded-xl px-6 py-3">
+                        <span className="text-lg text-white font-bold">
+                        Contact Me!
+                        </span>
+                    </div>
+                </motion.a>
             </div>
         </section>
     );
